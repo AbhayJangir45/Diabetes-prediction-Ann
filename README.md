@@ -109,10 +109,11 @@ The model successfully predicts diabetes risk using patient health records and a
 
 The following screenshots show the application interface and prediction results:
 
-* `Screenshots/Home1.png` - Main home page with input form
-* `Screenshots/Home2.png` - Alternative input screen or form view
-* `Screenshots/Result1.png` - Prediction result page
-* `Screenshots/result2.png` - Additional result view or output
+
+![Main home page with input form](Screenshots/Home1.png)
+![Alternative input screen or form view](Screenshots/Home1.png)
+![prediction result page](Screenshots/Result1.png)
+![Additional result view or output](Screenshots/result2.png)
 
 ---
 
