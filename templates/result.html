@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <main class="container result-page">
+      <a class="back-link" href="/">← Back to form</a>
+      <section class="result-card">
+        <div class="result-summary">
+          <h1>Prediction Result</h1>
+          <p id="prediction-text">Loading result...</p>
+          <div id="detail-list" class="detail-list"></div>
+        </div>
+
+        <div class="charts-grid">
+          <div class="chart-card">
+            <h2>Diabetes probability</h2>
+            <div class="chart-wrapper"><canvas id="probabilityChart"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h2>Feature values</h2>
+            <div class="chart-wrapper"><canvas id="featureChart"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h2>Patient vs Healthy</h2>
+            <div class="chart-wrapper"><canvas id="compareChart"></canvas></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/static/js/result.js"></script>
+  </body>
+</html>

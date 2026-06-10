@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">Diabetes Prediction</h1>
+
+      <form id="predict-form" class="form" novalidate>
+        <div class="row">
+          <label>Gender
+            <select id="gender" name="Gender" required>
+              <option value="Female" selected>Female</option>
+              <option value="Male">Male</option>
+            </select>
+          </label>
+          <label class="pregnancies-field">Pregnancies
+            <input name="Pregnancies" id="pregnancies" type="number" step="1" value="0" min="0" required/>
+          </label>
+        </div>
+
+        <div class="row">
+          <label>Glucose<input name="Glucose" type="number" step="any" value="88" required/></label>
+          <label>Blood Pressure<input name="BloodPressure" type="number" step="any" value="68" required/></label>
+        </div>
+
+        <div class="row">
+          <label>Skin Thickness<input name="SkinThickness" type="number" step="any" value="18" required/></label>
+          <label>Insulin<input name="Insulin" type="number" step="any" value="75" required/></label>
+        </div>
+
+        <div class="row">
+          <label>BMI<input name="BMI" type="number" step="any" value="23.0" required/></label>
+          <label>Diabetes Pedigree<input name="DiabetesPedigreeFunction" type="number" step="any" value="0.18" required/></label>
+        </div>
+
+        <div class="row">
+          <label>Age<input name="Age" type="number" step="1" value="22" required/></label>
+        </div>
+
+        <div class="actions">
+          <button id="predict-btn" type="submit" class="btn">Predict</button>
+          <div id="spinner" class="spinner hidden" aria-hidden="true"></div>
+        </div>
+      </form>
+
+      <div id="result" class="result inline hidden" aria-live="polite"></div>
+      <footer class="note">Powered by a simple Keras model.</footer>
+    </main>
+
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>
